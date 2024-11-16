@@ -1,0 +1,436 @@
+/* 
+CORES 
+
+#69c136
+
+#52af29
+
+#3b9d1b
+
+#238a0e
+
+#0c7800 
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+
+body{
+    background-color: #f4f4f4
+}
+.navMenu{
+    width: 100%;
+    height: 8vh;
+    border-bottom: 2px solid black;
+    align-items: center;
+
+    font-family: "Kanit", sans-serif;
+    display: inline-block;
+    background-color: white;
+
+}
+
+
+.mobileBar{
+    display: none;
+}
+
+#myLinks{
+    display: none;
+}
+
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+
+    margin-bottom: 1%;
+}
+
+
+.categorias{
+    font-family: "Kanit", sans-serif;
+}
+
+
+.logo{
+    text-align: center;
+    flex: 30%;
+    align-items: center;
+    margin-top: 0.5%;
+}
+
+.logo h1{
+    font-size: 4vh;
+}
+
+span{
+    color: #0c7800;
+}
+
+
+
+.pesquisa input{
+        width: 50vh;
+        height: 3vh;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: url(IMG\icons8-pesquisar-50.png) repeat left;
+        background-size: 2px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px) center;
+        padding-right: 30px; /* espaço para o ícone */
+}
+
+
+
+
+
+
+.pesquisa{
+    flex: 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+
+
+.lupa{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.lupa img{
+    width: 38%;
+}
+
+
+
+.menu{
+    flex: 55%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.menu a{
+    text-decoration: none;
+    padding-left: 0.9vh;
+    padding-right: 0.9vh;
+    color: #414041;
+    font-size: 2vh;
+
+}
+
+.menu a:hover{
+    border-bottom: 2px solid #0c7800;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.categorias{
+    
+    width: 100%;
+    height: 6vh;
+    align-items: center;
+    display: grid;
+
+
+}
+
+.categorias a{
+    color: #414041;
+}
+
+.opcoes{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+
+
+}
+
+.opcoes a{
+    text-decoration: none;
+    padding-left: 0.9vh;
+    padding-right: 0.9vh;
+
+
+}
+
+.opcoes a:hover{
+    border-bottom: 2px solid rgb(12, 120, 0);
+    font-size: 18px;
+}
+
+header{
+
+    align-items: center;
+
+}
+
+header img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 25%;
+
+
+}
+
+
+
+
+section{
+    display: flex;
+    padding-top: 10vh;
+}
+
+.cards{
+    border: 2px black solid;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 20vh;
+    border-radius: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    background-color: black;
+
+    /* 200% para que preencha toda a div */
+
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+
+
+}
+
+
+.cards::before{
+
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    background-image: url('/IMG/novas-cores-iphone-15.webp');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    transition: height 0.8s ease-in-out;
+    z-index: 0;
+}
+
+
+
+.cards h3, img{
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+    
+
+}
+
+.cards:hover:before{
+    height: 100%;
+}
+
+/* efeito hover no card */
+
+.cards:hover h3{
+    color: #159407;
+
+}
+
+.cards:hover img{
+
+    display: none;
+
+}
+
+.cards img{
+    width: 40%;
+}
+
+
+.celulares{
+
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "Faculty Glyphic", sans-serif;
+
+    padding-top: 10vh;
+}
+
+.celulares h1{
+    padding-bottom: 5vh;
+    color: #0c7800;
+    text-align: center;
+}
+
+.produtos{
+    display: flex;
+
+    gap: 50px;
+    padding-bottom: 5vh;
+
+}
+
+
+
+.produto{
+
+    text-align: center;
+    flex: 50%;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 9px 1px black
+
+}
+
+.produto h5{
+    color: #3b9d1b;
+    font-size: 2.7vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.4vh;
+}
+
+.produto h4{
+    padding-top: 0.7vh;
+}
+
+
+
+
+.produto img{
+    width: 35%;
+
+
+}
+
+.produto:hover{
+    cursor: pointer;
+}
+
+.depoimentos{
+    font-family: "Faculty Glyphic", sans-serif;
+    padding-top: 5vh;
+}
+.depoimentos h1{
+    text-align: center;
+    color: #0c7800;;
+    padding-bottom: 5vh;
+}
+.comentarios{
+    display: flex;
+
+
+}
+
+
+
+
+.clientes{
+
+
+    flex: 30%;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    box-shadow: -3px 0px 8px 0px black;
+}
+
+.clientes h2, p{
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+
+
+footer{
+    background-color: white;
+    height: 30vh;
+    width: 100%;
+    border-top: 2px solid black;
+
+    box-shadow: inset 0px -7px 6px 0px black;
+}
+
+
+.smedia img{
+    width: 6vh;
+    margin: 0 auto;
+
+}
+
+footer h1{
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.smedia{
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        align-items: center;
+        padding-top: 6vh;
+
+
+}
+
+.rsocial{
+    display: flex;
+    justify-content: center;
+}
+
+.fpagamento{
+    display: flex;
+    color: black;
+    align-items: center;
+    padding-top: 8vh;
+}
+
+.fpagamento h3{
+    padding-right: 5vh;
+    padding-left: 1vh;
+
+
+}
+
+.zap{
+    right: 3vh;
+    position: fixed;
+    bottom: 10px;
+    
+    
+    
+}

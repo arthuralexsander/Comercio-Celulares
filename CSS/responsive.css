@@ -1,0 +1,100 @@
+@media screen and (max-width: 885px){
+
+    .navMenu{
+        width: 100%;
+        height: 8vh;
+        border-bottom: 2px solid black;
+        align-items: center;
+    
+        font-family: "Kanit", sans-serif;
+        display: inline-block;
+    
+    }
+
+
+    .menu{
+        display: none
+    }
+
+    .mobileBar{
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .mobileBar img{
+        width: 15px;
+        padding-top: 1vh;
+
+    }
+    
+    #myLinks{
+        display: none;
+        background-color: white;
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        height: 6vh;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10vh;
+
+    }
+
+    #myLinks a{
+        text-decoration: none;
+    }
+
+    #myLinks a:hover{
+        border-bottom: 2px solid #0c7800;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+    .pesquisa input{
+        width: 20vh;
+        height: 3vh;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: url(IMG\icons8-pesquisar-50.png) repeat left;
+        background-size: 2px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px) center;
+        padding-right: 30px; /* espaço para o ícone */
+    }
+
+    .lupa{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .lupa img{
+        width: 10px;
+    }
+
+    .categorias{
+        font-size: 14px;
+    }
+
+    .clientes{
+        margin-left: 0.3vh;
+        margin-right: 0.3vh;
+        
+    }
+
+
+
+    .produtos{
+        gap: 10px;
+    }
+
+
+
+
+
+}
